@@ -27,7 +27,7 @@ services:
       placement:
         constraints: [node.role == manager]
     volumes:
-      - /data/portainer-data/:/data
+      - /tmp/data/portainer-data/:/data
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.portainer.rule=Host(`test3`)"
